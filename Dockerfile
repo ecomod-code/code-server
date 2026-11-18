@@ -19,7 +19,7 @@ RUN --mount=type=cache,target=/var/cache/apt \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Node
-RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
+RUN curl -fsSL https://deb.nodesource.com/setup_24.x | bash - && \
     apt-get install -y nodejs
 
 # Install Playwright with cached browser downloads
